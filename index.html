@@ -12,25 +12,28 @@
 <body>
     <header id="header-section">
         <h1>History of Slot Machines</h1>
-        <p>Slot machines have been around for over a century and are one of the most popular forms of gambling in the world. 
-            They have gone through many changes since their inception from their original "Poker Machine" design to the modern video slot machines we see today.
-            Here is a brief history of slot machines.</p>
+        <p>Slot machines have been around for over a century and are one of the most popular forms of gambling in the world, offering relatively low bets in comparison to table games.
+            They have gone through many changes since their inception from the original "Poker Machine" mechanical design to modern slot machines utilizing video graphics and wide-area progressives.
+            Here is a brief history of slot machines:</p>
         <section id="buttons">
-            <button id="sittmanpitt-button">Sittman and Pitt</button>
-            <button id="charlesfey-button">Charles Fey's Liberty Bell</button>
-            <button id="bally-button">Bally's Money Honey</button>
-            <button id="fortunecoin-button">Fortune Coin's Video Slots</button>
-            <button id="igt-button">IGT's Megabucks</button>
-            <button id="showall-button">Show All Of 'Em!</button>
+            <!-- button ids directly correspond to section.main-flex-child ids-->
+            <button id="sittmanpitt">Sittman and Pitt</button>
+            <button id="charlesfey">Charles Fey's Liberty Bell</button>
+            <button id="bally">Bally's Money Honey</button>
+            <button id="fortunecoin">Fortune Coin's Video Slots</button>
+            <button id="igt">IGT's Megabucks</button>
+            <button id="showall">Show All Of 'Em!</button>
         </section>
     </header>
+    <!--Wrapper for when all sections are shown-->
     <section id="main" class="flex">
-        <section id="sittmanpitt" class="main-flex-child">
+        <!-- Wrapper for the main sections of content -->
+        <section id="sittmanpitt-content" class="main-flex-child">
             <section id="sittmanpitt-section" class="content">
                 <h2>1891</h2>
                 <p>The first slot machine was invented by Sittman and Pitt in Brooklyn, New York. 
-                    It was a poker machine that had 5 drums with 50 playing cards. The machine was popular in bars and saloons, but it did not pay out money.
-                    Instead, players would win prizes like free drinks or cigars.</p>
+                Players would hope to form a hand of poker after putting in a nickel and pulling the lever, with prizes
+            tending to be cigars or free drinks due to prohibitions on gambling.</p>
             </section>
             <section id="image1" class="machine-view">
                 <img src="images/SittmanPitt.png" alt="Sittman & Pitt Poker Machine, an early, intensely ornate and metal and wood machine.">
@@ -41,19 +44,16 @@
                 </div>
             </section>
         </section>
-        <section id="charlesfey" class="main-flex-child">
+        <section id="charlesfey-content" class="main-flex-child">
             <section id="charlesfey-section" class="content">
                 <h2>1895</h2>
-                <p>Charles Fey, a mechanic from San Francisco, invented the first true slot machine. 
-                    It was called the Liberty Bell and had 3 reels with 5 symbols 
-                    – horseshoes, diamonds, spades, hearts, and a Liberty Bell. 
-                    The machine was a big hit and quickly spread to bars and saloons across the country.</p>
+                <p></p>
             </section>
             <section id="image2" class="machine-view">
                 <img src="images/SittmanPitt.png" alt="Slot Machine">
             </section>
         </section>
-        <section id="bally" class="main-flex-child">
+        <section id="bally-content" class="main-flex-child">
             <section id="bally-section" class="content">
                 <h2>1963</h2>
                 <p>Bally Technologies introduced the first electromechanical slot machine called Money Honey. 
@@ -64,7 +64,7 @@
                 <img src="images/SittmanPitt.png" alt="Slot Machine">
             </section>
         </section>
-        <section id="fortunecoin" class="main-flex-child">
+        <section id="fortunecoin-content" class="main-flex-child">
             <section id="fortunecoin-section" class="content">
                 <h2>1976</h2>
                 <p>The first video slot machine was invented by Fortune Coin Co. 
@@ -75,7 +75,7 @@
                 <img src="images/SittmanPitt.png" alt="Slot Machine">
             </section>
         </section>
-        <section id="igt" class="main-flex-child">
+        <section id="igt-content" class="main-flex-child">
             <section id="igt-section" class="content">
                 <h2>1996</h2>
                 <p>IGT introduced the first progressive slot machine called Megabucks.

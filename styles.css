@@ -57,7 +57,9 @@ button {
     cursor: pointer;
     border-radius: var(--main-border-radius);
     width: 15vw;
-    height: 5vw;
+    height: 8vw;
+    transition: background-color 150ms, font-weight 150ms;
+    transition-timing-function: ease-in;
 }
 /*Styling for the main sections and main-flex-child class*/
 .main-flex-child {
@@ -74,6 +76,7 @@ button {
     width: 100vw;
 }
 /*Styling for the content and machine-view classes, which make up the main section elements*/
+/* Content class = written content, machine-view = image & citation*/
 section.content {
     display: flex;
     flex-direction: column;
@@ -118,12 +121,21 @@ p {
     font-size: var(--main-text-size);
     color: #000;
 }
-/*Styling for visible and invisible classes*/
-.visible {
-    visibility: hidden;
+/*Styling for selected and invisible classes*/
+.selected {
+    background-color: yellowgreen;
+    font-weight: bold;
+}
+.invisible {
+    display: none;
+}
+
+/*transitions and animations for states, just for buttons*/
+button:hover {
+    background-color: #d3d3d3;
+    font-weight: bold;
 }
 /*Media query for mobile devices*/
-
 @media screen and (max-width: 700px) {
     header {
         width: 100%;
@@ -143,7 +155,9 @@ p {
     h1 {
         font-size: 8vw;
     }
-    
+    img {
+        max-width: 50vw;
+    }
 }
 /*Media query for tablets*/
 @media screen and (min-width: 700px) and (max-width: 1200px) {
@@ -154,10 +168,9 @@ p {
         grid-template-columns: 1fr;
     }
     button {
-        height: 8vh;
-        font-size: 2.0vw;
+        height: 10vh;
+        font-size: 1.8vw;
     }
-
     :root {
         --main-bg-color: #a9d62e;
         --main-text-color: #000;
@@ -167,18 +180,11 @@ p {
         --main-text-size: 2.5vw;
         --main-header-size: 6vw;
     }
+    img {
+        max-width: 60vw;
+    }
 }
-/*Media query for desktops*/
-@media screen and (min-width: 1200px) {
-:root {
-    --main-bg-color: #a9d62e;
-    --main-text-color: #000;
-    --main-border-color: #000000;
-    --main-border-radius: 2vw;
-    --section-bg-color: #f9f9f9;
-    --main-text-size: 1.6vw;
-    --main-header-size: 3vw;
-}
+
 /*Media query for large desktops*/
 @media screen and (min-width: 1200px) {
     :root {
@@ -193,4 +199,16 @@ p {
     h1 {
         height: 4vw;
     }
-}
+    p {
+        font-size: 2vw;
+    }
+    .main-flex-child {
+        flex-direction: row;
+    }
+    section.content {
+        height: 55vw;
+    }
+    section.machine-view {
+        height: 55vw;
+    }
+};
